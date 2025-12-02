@@ -33,13 +33,13 @@ public class Main {
         int acc = 0;
         int redes = 0;
 
-        String nombreMayor = "";
+        var nombreMayor = "";
         float precioMayor = 0;
 
         while (c < limite) {
 
             System.out.println("escribe el nombre del producto:");
-            String nombre = sc.next();
+            var nombre = sc.next();
 
             System.out.println("pon el precio del producto:");
             float precio = sc.nextFloat();
@@ -92,7 +92,7 @@ public class Main {
 
             float preciofinal = precio + iva + imc + irt + tce;
 
-            String nombrecategoria = "";
+            var nombrecategoria = "";
             if (categoria == 1) {
                 nombrecategoria = "electronica";
                 elec = elec + 1;
@@ -152,7 +152,7 @@ public class Main {
             catMayor = 4;
         }
 
-        String nombreCatMayor = "";
+        var nombreCatMayor = "";
         if (catMayor == 1) {
             nombreCatMayor = "electronica";
         } else if (catMayor == 2) {
